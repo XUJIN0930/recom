@@ -1,0 +1,41 @@
+{
+  "name": "Spark 4.0 PySpark",
+
+  // 直接使用官方镜像
+  "image": "apache/spark:4.0.2-python3",
+
+  // 容器启动时保持运行，而不是执行镜像默认命令（jshell 等）
+  "overrideCommand": true,
+
+  // 工作目录（镜像里 WORKDIR 是 /opt/spark/work-dir，我们就用这个）
+  "workspaceFolder": "/opt/spark/work-dir",
+
+  // 常用端口转发：Spark UI、Jupyter（如果你以后装）
+  "forwardPorts": [4040, 8888],
+
+  "portsAttributes": {
+    "4040": { "label": "Spark UI" },
+    "8888": { "label": "Jupyter" }
+  },
+
+  // 容器环境变量
+  "remoteEnv": {
+    "PYTHONUNBUFFERED": "1"
+  },
+
+  // 启动后自动安装常用 Python 包（可选）
+  "postCreateCommand": "pip install --user -q pyspark findspark jupyterlab || true",
+
+  // VS Code 相关
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
+      }
+    }
+  }
+}
