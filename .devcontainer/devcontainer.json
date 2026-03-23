@@ -1,14 +1,16 @@
 {
-  "name": "Spark 4.0 PySpark",
-  "image": "apache/spark:4.0.2-python3",
-  "workspaceFolder": "/opt/spark/work-dir",
+  "name": "experiment-devcontainer",
+  "build": {
+    "dockerfile": "./Dockerfile"
+  },
+  "workspaceFolder": "/root",
   "remoteUser": "root",
   "runArgs": ["--entrypoint", "/bin/bash"],
   "overrideCommand": true,
   "postStartCommand": "echo container ready",
   "customizations": {
     "vscode": {
-      "extensions": ["ms-python.python", "ms-toolsai.jupyter"],
+      "extensions": ["ms-python.python","GitHub.copilot-chat"],
       "settings": {"python.defaultInterpreterPath": "python3"}
     }
   },
