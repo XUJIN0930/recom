@@ -1,0 +1,655 @@
+WARNING: Using incubator modules: jdk.incubator.vector
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [org.slf4j.simple.SimpleServiceProvider@780cb77]
+SLF4J(W): Found provider [org.apache.logging.slf4j.SLF4JServiceProvider@691a7f8f]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [org.slf4j.simple.SimpleServiceProvider@780cb77]
+[main] WARN org.apache.spark.util.Utils - Your hostname, codespaces-1adeff, resolves to a loopback address: 127.0.0.1; using 10.0.3.230 instead (on interface eth0)
+[main] WARN org.apache.spark.util.Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+[Thread-4] INFO org.apache.spark.SparkContext - Running Spark version 4.1.1
+[Thread-4] INFO org.apache.spark.SparkContext - OS info Linux, 6.8.0-1044-azure, amd64
+[Thread-4] INFO org.apache.spark.SparkContext - Java version 17.0.18+8-Ubuntu-122.04.1
+[Thread-4] WARN org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[Thread-4] INFO org.apache.spark.resource.ResourceUtils - ==============================================================
+[Thread-4] INFO org.apache.spark.resource.ResourceUtils - No custom resources configured for spark.driver.
+[Thread-4] INFO org.apache.spark.resource.ResourceUtils - ==============================================================
+[Thread-4] INFO org.apache.spark.SparkContext - Submitted application: Exp3_Ultimate
+[Thread-4] INFO org.apache.spark.SecurityManager - Changing view acls to: root
+[Thread-4] INFO org.apache.spark.SecurityManager - Changing modify acls to: root
+[Thread-4] INFO org.apache.spark.SecurityManager - Changing view acls groups to: root
+[Thread-4] INFO org.apache.spark.SecurityManager - Changing modify acls groups to: root
+[Thread-4] INFO org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL disabled
+[Thread-4] INFO org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 37855.
+[Thread-4] INFO org.apache.spark.SparkEnv - Registering MapOutputTracker
+[Thread-4] INFO org.apache.spark.SparkEnv - Registering BlockManagerMaster
+[Thread-4] INFO org.apache.spark.storage.BlockManagerMasterEndpoint - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[Thread-4] INFO org.apache.spark.storage.BlockManagerMasterEndpoint - BlockManagerMasterEndpoint up
+[Thread-4] INFO org.apache.spark.SparkEnv - Registering BlockManagerMasterHeartbeat
+[Thread-4] INFO org.apache.spark.storage.DiskBlockManager - Created local directory at /tmp/blockmgr-e1399e14-52ee-4a86-b3ee-9e3015b49c32
+[Thread-4] INFO org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+[Thread-4] INFO org.apache.spark.ui.JettyUtils - Start Jetty 0.0.0.0:4040 for SparkUI
+[Thread-4] INFO org.sparkproject.jetty.server.Server - jetty-11.0.26; built: 2025-08-14T18:03:14.457Z; git: 7559873b6e46eea7c2c6da2b58327ea2ecf941f4; jvm 17.0.18+8-Ubuntu-122.04.1
+[Thread-4] INFO org.sparkproject.jetty.server.Server - Started Server@2134dc89{STARTING}[11.0.26,sto=30000] @4761ms
+[Thread-4] INFO org.sparkproject.jetty.server.AbstractConnector - Started ServerConnector@1cbfdc8c{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+[Thread-4] INFO org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@26fc444e{/,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.apache.spark.resource.ResourceProfile - Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[Thread-4] INFO org.apache.spark.resource.ResourceProfile - Limiting resource is cpu
+[Thread-4] INFO org.apache.spark.resource.ResourceProfileManager - Added ResourceProfile id: 0
+[Thread-4] INFO org.apache.spark.SecurityManager - Changing view acls to: root
+[Thread-4] INFO org.apache.spark.SecurityManager - Changing modify acls to: root
+[Thread-4] INFO org.apache.spark.SecurityManager - Changing view acls groups to: root
+[Thread-4] INFO org.apache.spark.SecurityManager - Changing modify acls groups to: root
+[Thread-4] INFO org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL disabled
+[Thread-4] INFO org.apache.spark.executor.Executor - Starting executor ID driver on host a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net
+[Thread-4] INFO org.apache.spark.executor.Executor - OS info Linux, 6.8.0-1044-azure, amd64
+[Thread-4] INFO org.apache.spark.executor.Executor - Java version 17.0.18+8-Ubuntu-122.04.1
+[Thread-4] INFO org.apache.spark.executor.Executor - Starting executor with user classpath (userClassPathFirst = false): ''
+[Thread-4] INFO org.apache.spark.executor.Executor - Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@3137b30d for default.
+[Thread-4] INFO org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 36233.
+[Thread-4] INFO org.apache.spark.network.netty.NettyBlockTransferService - Server created on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net:36233
+[Thread-4] INFO org.apache.spark.storage.BlockManager - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[Thread-4] INFO org.apache.spark.storage.BlockManagerMaster - Registering BlockManager BlockManagerId(driver, a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net, 36233, None)
+[dispatcher-BlockManagerMaster] INFO org.apache.spark.storage.BlockManagerMasterEndpoint - Registering block manager a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net:36233 with 434.4 MiB RAM, BlockManagerId(driver, a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net, 36233, None)
+[Thread-4] INFO org.apache.spark.storage.BlockManagerMaster - Registered BlockManager BlockManagerId(driver, a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net, 36233, None)
+[Thread-4] INFO org.apache.spark.storage.BlockManager - Initialized BlockManager: BlockManagerId(driver, a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net, 36233, None)
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Stopped o.s.j.s.ServletContextHandler@26fc444e{/,null,STOPPED,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@54dd7f64{/jobs,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4d24e7fb{/jobs/json,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1fa65dfc{/jobs/job,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6b79b622{/jobs/job/json,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@838d742{/stages,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3806fda2{/stages/json,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4b8e5ee1{/stages/stage,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@641f5c15{/stages/stage/json,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@170af530{/stages/pool,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5b599a8c{/stages/pool/json,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@63725cb1{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@759f04ea{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2b3389ce{/storage,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6f348815{/storage/json,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2c50018f{/storage/rdd,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@ec0aed4{/storage/rdd/json,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d5360cb{/environment,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5cb92007{/environment/json,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@718a089a{/executors,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1740483e{/executors/json,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7a66577c{/executors/threadDump,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@a30cc27{/executors/threadDump/json,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@53efcd38{/executors/heapHistogram,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@631827f5{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@a32fda{/static,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@581f3f52{/,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@47ef7642{/api,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@12b5f452{/metrics,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3390c56c{/jobs/job/kill,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@dc8a2ef{/stages/stage/kill,null,AVAILABLE,@Spark}
+[Thread-4] INFO org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d2e2e9d{/metrics/json,null,AVAILABLE,@Spark}
+==================================================
+          Spark RDD 编程基础实验（带容错处理）
+==================================================
+
+=== 实验1：读取并解析 departments.txt ===
+[Thread-4] INFO org.apache.spark.storage.memory.MemoryStore - MemoryStore started with capacity 434.4 MiB
+[Thread-4] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 291.7 KiB, free 434.1 MiB)
+[Thread-4] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 49.7 KiB, free 434.1 MiB)
+[Thread-4] INFO org.apache.spark.SparkContext - Created broadcast 0 from textFile at NativeMethodAccessorImpl.java:0
+部门数据解析结果（前5条）：
+[Thread-4] INFO org.apache.hadoop.mapred.FileInputFormat - Total input files to process : 1
+[Thread-4] INFO org.apache.spark.SparkContext - Starting job: collect at /workspaces/recom/expstu/exp3/exp3_full.py:18
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Got job 0 (collect at /workspaces/recom/expstu/exp3/exp3_full.py:18) with 2 output partitions
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 0 (collect at /workspaces/recom/expstu/exp3/exp3_full.py:18)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents found for ResultStage 0: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 0 (PythonRDD[2] at collect at /workspaces/recom/expstu/exp3/exp3_full.py:18), which has no missing parents
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_1 stored as values in memory (estimated size 8.5 KiB, free 434.1 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_1_piece0 stored as bytes in memory (estimated size 5.1 KiB, free 434.1 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.SparkContext - Created broadcast 1 from broadcast at DAGScheduler.scala:1686
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting 2 missing tasks from ResultStage 0 (PythonRDD[2] at collect at /workspaces/recom/expstu/exp3/exp3_full.py:18) (first 15 tasks are for partitions Vector(0, 1))
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 2 tasks resource profile 0
+[dispatcher-event-loop-1] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 0, PROCESS_LOCAL, 9697 bytes) 
+[dispatcher-event-loop-1] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 0.0 (TID 1) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 1, PROCESS_LOCAL, 9697 bytes) 
+[Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+[Executor task launch worker for task 1.0 in stage 0.0 (TID 1)] INFO org.apache.spark.executor.Executor - Running task 1.0 in stage 0.0 (TID 1)
+[Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO org.apache.spark.rdd.HadoopRDD - Task (TID 0) input split: file:/workspaces/recom/expstu/exp3/departments.txt:0+37
+[Executor task launch worker for task 1.0 in stage 0.0 (TID 1)] INFO org.apache.spark.rdd.HadoopRDD - Task (TID 1) input split: file:/workspaces/recom/expstu/exp3/departments.txt:37+38
+[Executor task launch worker for task 1.0 in stage 0.0 (TID 1)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 1033, boot = 757, init = 276, finish = 0
+[Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 1041, boot = 767, init = 274, finish = 0
+[Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 1798 bytes result sent to driver
+[Executor task launch worker for task 1.0 in stage 0.0 (TID 1)] INFO org.apache.spark.executor.Executor - Finished task 1.0 in stage 0.0 (TID 1). 1774 bytes result sent to driver
+[task-result-getter-1] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 0.0 (TID 1) in 1305 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (1/2)
+[task-result-getter-0] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 1335 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (2/2)
+[task-result-getter-0] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0 whose tasks have all completed, from pool 
+[dag-scheduler-event-loop] INFO org.apache.spark.api.python.PythonAccumulatorV2 - Connected to AccumulatorServer at host: 127.0.0.1 port: 47367
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - ResultStage 0 (collect at /workspaces/recom/expstu/exp3/exp3_full.py:18) finished in 1418 ms
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Canceling stage 0
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 0: Stage finished
+[Thread-4] INFO org.apache.spark.scheduler.DAGScheduler - Job 0 finished: collect at /workspaces/recom/expstu/exp3/exp3_full.py:18, took 1547.344882 ms
+部门编号: D001, 部门名称: 技术部
+部门编号: D002, 部门名称: 市场部
+部门编号: D003, 部门名称: 研发部
+部门编号: D004, 部门名称: 人事部
+部门编号: D005, 部门名称: 管理部
+
+=== 实验2：员工数据与部门关联查询 ===
+[Thread-4] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_2 stored as values in memory (estimated size 291.7 KiB, free 433.8 MiB)
+[Thread-4] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_2_piece0 stored as bytes in memory (estimated size 49.7 KiB, free 433.7 MiB)
+[Thread-4] INFO org.apache.spark.SparkContext - Created broadcast 2 from textFile at NativeMethodAccessorImpl.java:0
+employees.txt 原始数据前10行：
+[Thread-4] INFO org.apache.hadoop.mapred.FileInputFormat - Total input files to process : 1
+[Thread-4] INFO org.apache.spark.SparkContext - Starting job: runJob at PythonRDD.scala:191
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Got job 1 (runJob at PythonRDD.scala:191) with 1 output partitions
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 1 (runJob at PythonRDD.scala:191)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents found for ResultStage 1: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 1 (PythonRDD[5] at RDD at PythonRDD.scala:58), which has no missing parents
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_3 stored as values in memory (estimated size 7.8 KiB, free 433.7 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_3_piece0 stored as bytes in memory (estimated size 4.7 KiB, free 433.7 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.SparkContext - Created broadcast 3 from broadcast at DAGScheduler.scala:1686
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 1 (PythonRDD[5] at RDD at PythonRDD.scala:58) (first 15 tasks are for partitions Vector(0))
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 1.0 with 1 tasks resource profile 0
+[dispatcher-event-loop-1] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 1.0 (TID 2) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 0, PROCESS_LOCAL, 9695 bytes) 
+[Executor task launch worker for task 0.0 in stage 1.0 (TID 2)] INFO org.apache.spark.executor.Executor - Running task 0.0 in stage 1.0 (TID 2)
+[Executor task launch worker for task 0.0 in stage 1.0 (TID 2)] INFO org.apache.spark.rdd.HadoopRDD - Task (TID 2) input split: file:/workspaces/recom/expstu/exp3/employees.txt:0+345
+[Executor task launch worker for task 0.0 in stage 1.0 (TID 2)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 202, boot = -258, init = 460, finish = 0
+[Executor task launch worker for task 0.0 in stage 1.0 (TID 2)] INFO org.apache.spark.executor.Executor - Finished task 0.0 in stage 1.0 (TID 2). 1939 bytes result sent to driver
+[task-result-getter-2] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 1.0 (TID 2) in 244 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (1/1)
+[task-result-getter-2] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 1.0 whose tasks have all completed, from pool 
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - ResultStage 1 (runJob at PythonRDD.scala:191) finished in 258 ms
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Canceling stage 1
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 1: Stage finished
+[Thread-4] INFO org.apache.spark.scheduler.DAGScheduler - Job 1 finished: runJob at PythonRDD.scala:191, took 267.3102 ms
+['D001,张三,8500', 'D002,李四,9200', 'D001,王五,7800', 'D003,赵六,10500', 'D002,钱七,8800', 'D001,孙八,6500', 'D003,周九,12000', 'D004,吴十,7500', 'D002,郑十一,9500', 'D001,冯十二,7200']
+过滤后的员工数据前10条：
+[Thread-4] INFO org.apache.spark.SparkContext - Starting job: runJob at PythonRDD.scala:191
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Got job 2 (runJob at PythonRDD.scala:191) with 1 output partitions
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 2 (runJob at PythonRDD.scala:191)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents found for ResultStage 2: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 2 (PythonRDD[6] at RDD at PythonRDD.scala:58), which has no missing parents
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_4 stored as values in memory (estimated size 9.3 KiB, free 433.7 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_4_piece0 stored as bytes in memory (estimated size 5.5 KiB, free 433.7 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.SparkContext - Created broadcast 4 from broadcast at DAGScheduler.scala:1686
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 2 (PythonRDD[6] at RDD at PythonRDD.scala:58) (first 15 tasks are for partitions Vector(0))
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 2.0 with 1 tasks resource profile 0
+[dispatcher-event-loop-0] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 2.0 (TID 3) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 0, PROCESS_LOCAL, 9695 bytes) 
+[Executor task launch worker for task 0.0 in stage 2.0 (TID 3)] INFO org.apache.spark.executor.Executor - Running task 0.0 in stage 2.0 (TID 3)
+[Executor task launch worker for task 0.0 in stage 2.0 (TID 3)] INFO org.apache.spark.rdd.HadoopRDD - Task (TID 3) input split: file:/workspaces/recom/expstu/exp3/employees.txt:0+345
+[Executor task launch worker for task 0.0 in stage 2.0 (TID 3)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 173, boot = -561, init = 734, finish = 0
+[Executor task launch worker for task 0.0 in stage 2.0 (TID 3)] INFO org.apache.spark.executor.Executor - Finished task 0.0 in stage 2.0 (TID 3). 1977 bytes result sent to driver
+[task-result-getter-3] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 2.0 (TID 3) in 207 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (1/1)
+[task-result-getter-3] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 2.0 whose tasks have all completed, from pool 
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - ResultStage 2 (runJob at PythonRDD.scala:191) finished in 249 ms
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Canceling stage 2
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 2: Stage finished
+[Thread-4] INFO org.apache.spark.scheduler.DAGScheduler - Job 2 finished: runJob at PythonRDD.scala:191, took 255.051353 ms
+[('D001', ('张三', 8500)), ('D002', ('李四', 9200)), ('D001', ('王五', 7800)), ('D003', ('赵六', 10500)), ('D002', ('钱七', 8800)), ('D001', ('孙八', 6500)), ('D003', ('周九', 12000)), ('D004', ('吴十', 7500)), ('D002', ('郑十一', 9500)), ('D001', ('冯十二', 7200))]
+部门数据前5条：
+[Thread-4] INFO org.apache.spark.SparkContext - Starting job: runJob at PythonRDD.scala:191
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Got job 3 (runJob at PythonRDD.scala:191) with 1 output partitions
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 3 (runJob at PythonRDD.scala:191)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents found for ResultStage 3: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 3 (PythonRDD[7] at RDD at PythonRDD.scala:58), which has no missing parents
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_5 stored as values in memory (estimated size 9.6 KiB, free 433.7 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_5_piece0 stored as bytes in memory (estimated size 5.5 KiB, free 433.7 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.SparkContext - Created broadcast 5 from broadcast at DAGScheduler.scala:1686
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 3 (PythonRDD[7] at RDD at PythonRDD.scala:58) (first 15 tasks are for partitions Vector(0))
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 3.0 with 1 tasks resource profile 0
+[dispatcher-event-loop-1] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 3.0 (TID 4) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 0, PROCESS_LOCAL, 9697 bytes) 
+[Executor task launch worker for task 0.0 in stage 3.0 (TID 4)] INFO org.apache.spark.executor.Executor - Running task 0.0 in stage 3.0 (TID 4)
+[Executor task launch worker for task 0.0 in stage 3.0 (TID 4)] INFO org.apache.spark.rdd.HadoopRDD - Task (TID 4) input split: file:/workspaces/recom/expstu/exp3/departments.txt:0+37
+[Executor task launch worker for task 0.0 in stage 3.0 (TID 4)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 424, boot = 9, init = 414, finish = 1
+[Executor task launch worker for task 0.0 in stage 3.0 (TID 4)] INFO org.apache.spark.executor.Executor - Finished task 0.0 in stage 3.0 (TID 4). 1749 bytes result sent to driver
+[task-result-getter-0] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 3.0 (TID 4) in 448 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (1/1)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - ResultStage 3 (runJob at PythonRDD.scala:191) finished in 459 ms
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Job 3 is finished. Cancelling potential speculative or zombie tasks for this job
+[task-result-getter-0] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 3.0 whose tasks have all completed, from pool 
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Canceling stage 3
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 3: Stage finished
+[Thread-4] INFO org.apache.spark.scheduler.DAGScheduler - Job 3 finished: runJob at PythonRDD.scala:191, took 466.010215 ms
+[Thread-4] INFO org.apache.spark.SparkContext - Starting job: runJob at PythonRDD.scala:191
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Got job 4 (runJob at PythonRDD.scala:191) with 1 output partitions
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 4 (runJob at PythonRDD.scala:191)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents found for ResultStage 4: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 4 (PythonRDD[8] at RDD at PythonRDD.scala:58), which has no missing parents
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_6 stored as values in memory (estimated size 9.6 KiB, free 433.7 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_6_piece0 stored as bytes in memory (estimated size 5.5 KiB, free 433.7 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.SparkContext - Created broadcast 6 from broadcast at DAGScheduler.scala:1686
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 4 (PythonRDD[8] at RDD at PythonRDD.scala:58) (first 15 tasks are for partitions Vector(1))
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 4.0 with 1 tasks resource profile 0
+[dispatcher-event-loop-0] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 4.0 (TID 5) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 1, PROCESS_LOCAL, 9697 bytes) 
+[Executor task launch worker for task 0.0 in stage 4.0 (TID 5)] INFO org.apache.spark.executor.Executor - Running task 0.0 in stage 4.0 (TID 5)
+[Executor task launch worker for task 0.0 in stage 4.0 (TID 5)] INFO org.apache.spark.rdd.HadoopRDD - Task (TID 5) input split: file:/workspaces/recom/expstu/exp3/departments.txt:37+38
+[Executor task launch worker for task 0.0 in stage 4.0 (TID 5)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 100, boot = -96, init = 196, finish = 0
+[Executor task launch worker for task 0.0 in stage 4.0 (TID 5)] INFO org.apache.spark.executor.Executor - Finished task 0.0 in stage 4.0 (TID 5). 1727 bytes result sent to driver
+[task-result-getter-1] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 4.0 (TID 5) in 133 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (1/1)
+[task-result-getter-1] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 4.0 whose tasks have all completed, from pool 
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - ResultStage 4 (runJob at PythonRDD.scala:191) finished in 164 ms
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Job 4 is finished. Cancelling potential speculative or zombie tasks for this job
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Canceling stage 4
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 4: Stage finished
+[Thread-4] INFO org.apache.spark.scheduler.DAGScheduler - Job 4 finished: runJob at PythonRDD.scala:191, took 183.051772 ms
+[('D001', '技术部'), ('D002', '市场部'), ('D003', '研发部'), ('D004', '人事部'), ('D005', '管理部')]
+员工-部门关联结果（前10条）：
+[Thread-4] INFO org.apache.spark.SparkContext - Starting job: runJob at PythonRDD.scala:191
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Registering RDD 13 (join at /workspaces/recom/expstu/exp3/exp3_full.py:54) as input to shuffle 0
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Got job 5 (runJob at PythonRDD.scala:191) with 1 output partitions
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 6 (runJob at PythonRDD.scala:191)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List(ShuffleMapStage 5)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents: List(ShuffleMapStage 5)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents found for ResultStage 6: List(ShuffleMapStage 5)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents found for ShuffleMapStage 5: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting ShuffleMapStage 5 (PairwiseRDD[13] at join at /workspaces/recom/expstu/exp3/exp3_full.py:54), which has no missing parents
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_7 stored as values in memory (estimated size 19.8 KiB, free 433.7 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_7_piece0 stored as bytes in memory (estimated size 9.1 KiB, free 433.7 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.SparkContext - Created broadcast 7 from broadcast at DAGScheduler.scala:1686
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting 4 missing tasks from ShuffleMapStage 5 (PairwiseRDD[13] at join at /workspaces/recom/expstu/exp3/exp3_full.py:54) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 5.0 with 4 tasks resource profile 0
+[dispatcher-event-loop-1] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 5.0 (TID 6) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 0, PROCESS_LOCAL, 9793 bytes) 
+[dispatcher-event-loop-1] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 5.0 (TID 7) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 1, PROCESS_LOCAL, 9793 bytes) 
+[Executor task launch worker for task 1.0 in stage 5.0 (TID 7)] INFO org.apache.spark.executor.Executor - Running task 1.0 in stage 5.0 (TID 7)
+[Executor task launch worker for task 0.0 in stage 5.0 (TID 6)] INFO org.apache.spark.executor.Executor - Running task 0.0 in stage 5.0 (TID 6)
+[Executor task launch worker for task 1.0 in stage 5.0 (TID 7)] INFO org.apache.spark.rdd.HadoopRDD - Task (TID 7) input split: file:/workspaces/recom/expstu/exp3/employees.txt:345+346
+[Executor task launch worker for task 0.0 in stage 5.0 (TID 6)] INFO org.apache.spark.rdd.HadoopRDD - Task (TID 6) input split: file:/workspaces/recom/expstu/exp3/employees.txt:0+345
+[Executor task launch worker for task 1.0 in stage 5.0 (TID 7)] INFO org.apache.spark.SecurityManager - Changing view acls to: root
+[Executor task launch worker for task 1.0 in stage 5.0 (TID 7)] INFO org.apache.spark.SecurityManager - Changing modify acls to: root
+[Executor task launch worker for task 1.0 in stage 5.0 (TID 7)] INFO org.apache.spark.SecurityManager - Changing view acls groups to: root
+[Executor task launch worker for task 1.0 in stage 5.0 (TID 7)] INFO org.apache.spark.SecurityManager - Changing modify acls groups to: root
+[Executor task launch worker for task 1.0 in stage 5.0 (TID 7)] INFO org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL disabled
+[Executor task launch worker for task 0.0 in stage 5.0 (TID 6)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 422, boot = 6, init = 411, finish = 5
+[Executor task launch worker for task 1.0 in stage 5.0 (TID 7)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 528, boot = 10, init = 518, finish = 0
+[Executor task launch worker for task 0.0 in stage 5.0 (TID 6)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 550, boot = 10, init = 540, finish = 0
+[Executor task launch worker for task 1.0 in stage 5.0 (TID 7)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 523, boot = 7, init = 482, finish = 34
+[Executor task launch worker for task 0.0 in stage 5.0 (TID 6)] INFO org.apache.spark.executor.Executor - Finished task 0.0 in stage 5.0 (TID 6). 1933 bytes result sent to driver
+[Executor task launch worker for task 1.0 in stage 5.0 (TID 7)] INFO org.apache.spark.executor.Executor - Finished task 1.0 in stage 5.0 (TID 7). 1890 bytes result sent to driver
+[dispatcher-event-loop-0] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 2.0 in stage 5.0 (TID 8) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 2, PROCESS_LOCAL, 9795 bytes) 
+[Executor task launch worker for task 2.0 in stage 5.0 (TID 8)] INFO org.apache.spark.executor.Executor - Running task 2.0 in stage 5.0 (TID 8)
+[dispatcher-event-loop-0] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 3.0 in stage 5.0 (TID 9) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 3, PROCESS_LOCAL, 9795 bytes) 
+[Executor task launch worker for task 3.0 in stage 5.0 (TID 9)] INFO org.apache.spark.executor.Executor - Running task 3.0 in stage 5.0 (TID 9)
+[task-result-getter-2] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 5.0 (TID 6) in 2793 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (1/4)
+[task-result-getter-3] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 5.0 (TID 7) in 2779 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (2/4)
+[Executor task launch worker for task 2.0 in stage 5.0 (TID 8)] INFO org.apache.spark.rdd.HadoopRDD - Task (TID 8) input split: file:/workspaces/recom/expstu/exp3/departments.txt:0+37
+[Executor task launch worker for task 3.0 in stage 5.0 (TID 9)] INFO org.apache.spark.rdd.HadoopRDD - Task (TID 9) input split: file:/workspaces/recom/expstu/exp3/departments.txt:37+38
+[Executor task launch worker for task 2.0 in stage 5.0 (TID 8)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 339, boot = -2311, init = 2649, finish = 1
+[Executor task launch worker for task 3.0 in stage 5.0 (TID 9)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 410, boot = -2214, init = 2623, finish = 1
+[Executor task launch worker for task 3.0 in stage 5.0 (TID 9)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 424, boot = -2219, init = 2643, finish = 0
+[Executor task launch worker for task 3.0 in stage 5.0 (TID 9)] INFO org.apache.spark.executor.Executor - Finished task 3.0 in stage 5.0 (TID 9). 1890 bytes result sent to driver
+[task-result-getter-0] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 3.0 in stage 5.0 (TID 9) in 484 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (3/4)
+[Executor task launch worker for task 2.0 in stage 5.0 (TID 8)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 420, boot = -2192, init = 2612, finish = 0
+[Executor task launch worker for task 2.0 in stage 5.0 (TID 8)] INFO org.apache.spark.executor.Executor - Finished task 2.0 in stage 5.0 (TID 8). 1890 bytes result sent to driver
+[task-result-getter-1] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 2.0 in stage 5.0 (TID 8) in 521 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (4/4)
+[task-result-getter-1] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 5.0 whose tasks have all completed, from pool 
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - ShuffleMapStage 5 (join at /workspaces/recom/expstu/exp3/exp3_full.py:54) finished in 3361 ms
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - looking for newly runnable stages
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - running: HashSet()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - waiting: HashSet(ResultStage 6)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - failed: HashSet()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents found for ResultStage 6: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 6 (PythonRDD[16] at RDD at PythonRDD.scala:58), which has no missing parents
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_8 stored as values in memory (estimated size 13.3 KiB, free 433.7 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_8_piece0 stored as bytes in memory (estimated size 7.2 KiB, free 433.7 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.SparkContext - Created broadcast 8 from broadcast at DAGScheduler.scala:1686
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 6 (PythonRDD[16] at RDD at PythonRDD.scala:58) (first 15 tasks are for partitions Vector(0))
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 6.0 with 1 tasks resource profile 0
+[dispatcher-event-loop-0] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 6.0 (TID 10) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 0, NODE_LOCAL, 9449 bytes) 
+[Executor task launch worker for task 0.0 in stage 6.0 (TID 10)] INFO org.apache.spark.executor.Executor - Running task 0.0 in stage 6.0 (TID 10)
+[Executor task launch worker for task 0.0 in stage 6.0 (TID 10)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 2 (253.0 B) non-empty blocks including 2 (253.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[Executor task launch worker for task 0.0 in stage 6.0 (TID 10)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 12 ms
+[Executor task launch worker for task 0.0 in stage 6.0 (TID 10)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 110, boot = -218, init = 328, finish = 0
+[Executor task launch worker for task 0.0 in stage 6.0 (TID 10)] INFO org.apache.spark.executor.Executor - Finished task 0.0 in stage 6.0 (TID 10). 2590 bytes result sent to driver
+[task-result-getter-2] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 6.0 (TID 10) in 190 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (1/1)
+[task-result-getter-2] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 6.0 whose tasks have all completed, from pool 
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - ResultStage 6 (runJob at PythonRDD.scala:191) finished in 209 ms
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Job 5 is finished. Cancelling potential speculative or zombie tasks for this job
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Canceling stage 6
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 6: Stage finished
+[Thread-4] INFO org.apache.spark.scheduler.DAGScheduler - Job 5 finished: runJob at PythonRDD.scala:191, took 3628.223027 ms
+[Thread-4] INFO org.apache.spark.SparkContext - Starting job: runJob at PythonRDD.scala:191
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Got job 6 (runJob at PythonRDD.scala:191) with 2 output partitions
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 8 (runJob at PythonRDD.scala:191)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List(ShuffleMapStage 7)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents found for ResultStage 8: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 8 (PythonRDD[17] at RDD at PythonRDD.scala:58), which has no missing parents
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_9 stored as values in memory (estimated size 13.3 KiB, free 433.7 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_9_piece0 stored as bytes in memory (estimated size 7.2 KiB, free 433.7 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.SparkContext - Created broadcast 9 from broadcast at DAGScheduler.scala:1686
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting 2 missing tasks from ResultStage 8 (PythonRDD[17] at RDD at PythonRDD.scala:58) (first 15 tasks are for partitions Vector(1, 2))
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 8.0 with 2 tasks resource profile 0
+[dispatcher-event-loop-1] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 8.0 (TID 11) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 1, NODE_LOCAL, 9449 bytes) 
+[dispatcher-event-loop-1] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 8.0 (TID 12) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 2, NODE_LOCAL, 9449 bytes) 
+[Executor task launch worker for task 1.0 in stage 8.0 (TID 12)] INFO org.apache.spark.executor.Executor - Running task 1.0 in stage 8.0 (TID 12)
+[Executor task launch worker for task 0.0 in stage 8.0 (TID 11)] INFO org.apache.spark.executor.Executor - Running task 0.0 in stage 8.0 (TID 11)
+[Executor task launch worker for task 0.0 in stage 8.0 (TID 11)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 3 (410.0 B) non-empty blocks including 3 (410.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[Executor task launch worker for task 0.0 in stage 8.0 (TID 11)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 0 ms
+[Executor task launch worker for task 1.0 in stage 8.0 (TID 12)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 3 (428.0 B) non-empty blocks including 3 (428.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[Executor task launch worker for task 1.0 in stage 8.0 (TID 12)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 2 ms
+[Executor task launch worker for task 1.0 in stage 8.0 (TID 12)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 237, boot = -405, init = 641, finish = 1
+[Executor task launch worker for task 1.0 in stage 8.0 (TID 12)] INFO org.apache.spark.executor.Executor - Finished task 1.0 in stage 8.0 (TID 12). 2546 bytes result sent to driver
+[task-result-getter-3] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 8.0 (TID 12) in 290 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (1/2)
+[Executor task launch worker for task 0.0 in stage 8.0 (TID 11)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 297, boot = -376, init = 673, finish = 0
+[Executor task launch worker for task 0.0 in stage 8.0 (TID 11)] INFO org.apache.spark.executor.Executor - Finished task 0.0 in stage 8.0 (TID 11). 2549 bytes result sent to driver
+[task-result-getter-0] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 8.0 (TID 11) in 338 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (2/2)
+[task-result-getter-0] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 8.0 whose tasks have all completed, from pool 
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - ResultStage 8 (runJob at PythonRDD.scala:191) finished in 353 ms
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Job 6 is finished. Cancelling potential speculative or zombie tasks for this job
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Canceling stage 8
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 8: Stage finished
+[Thread-4] INFO org.apache.spark.scheduler.DAGScheduler - Job 6 finished: runJob at PythonRDD.scala:191, took 365.270132 ms
+部门: 管理部(D005), 姓名: 许二三, 工资: 15000
+部门: 管理部(D005), 姓名: 张二七, 工资: 16500
+部门: 管理部(D005), 姓名: 金三二, 工资: 15800
+部门: 管理部(D005), 姓名: 谢三七, 工资: 17200
+部门: 市场部(D002), 姓名: 李四, 工资: 9200
+部门: 市场部(D002), 姓名: 钱七, 工资: 8800
+部门: 市场部(D002), 姓名: 郑十一, 工资: 9500
+部门: 市场部(D002), 姓名: 卫十五, 工资: 10200
+部门: 市场部(D002), 姓名: 杨十九, 工资: 9100
+部门: 市场部(D002), 姓名: 施二六, 工资: 8900
+
+=== 实验3：按部门统计员工人数与平均工资 ===
+[Thread-4] INFO org.apache.spark.SparkContext - Starting job: runJob at PythonRDD.scala:191
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Got job 7 (runJob at PythonRDD.scala:191) with 1 output partitions
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 10 (runJob at PythonRDD.scala:191)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List(ShuffleMapStage 9)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents found for ResultStage 10: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 10 (PythonRDD[18] at RDD at PythonRDD.scala:58), which has no missing parents
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_10 stored as values in memory (estimated size 13.3 KiB, free 433.7 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_10_piece0 stored as bytes in memory (estimated size 7.2 KiB, free 433.7 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.SparkContext - Created broadcast 10 from broadcast at DAGScheduler.scala:1686
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 10 (PythonRDD[18] at RDD at PythonRDD.scala:58) (first 15 tasks are for partitions Vector(0))
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 10.0 with 1 tasks resource profile 0
+[dispatcher-event-loop-0] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 10.0 (TID 13) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 0, NODE_LOCAL, 9449 bytes) 
+[Executor task launch worker for task 0.0 in stage 10.0 (TID 13)] INFO org.apache.spark.executor.Executor - Running task 0.0 in stage 10.0 (TID 13)
+[Executor task launch worker for task 0.0 in stage 10.0 (TID 13)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 2 (253.0 B) non-empty blocks including 2 (253.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[Executor task launch worker for task 0.0 in stage 10.0 (TID 13)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 0 ms
+[Executor task launch worker for task 0.0 in stage 10.0 (TID 13)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 181, boot = -731, init = 912, finish = 0
+[Executor task launch worker for task 0.0 in stage 10.0 (TID 13)] INFO org.apache.spark.executor.Executor - Finished task 0.0 in stage 10.0 (TID 13). 2345 bytes result sent to driver
+[task-result-getter-1] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 10.0 (TID 13) in 206 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (1/1)
+[task-result-getter-1] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 10.0 whose tasks have all completed, from pool 
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - ResultStage 10 (runJob at PythonRDD.scala:191) finished in 232 ms
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Job 7 is finished. Cancelling potential speculative or zombie tasks for this job
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Canceling stage 10
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 10: Stage finished
+[Thread-4] INFO org.apache.spark.scheduler.DAGScheduler - Job 7 finished: runJob at PythonRDD.scala:191, took 237.536682 ms
+部门统计结果：
+[Thread-4] INFO org.apache.spark.SparkContext - Starting job: collect at /workspaces/recom/expstu/exp3/exp3_full.py:71
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Registering RDD 20 (reduceByKey at /workspaces/recom/expstu/exp3/exp3_full.py:68) as input to shuffle 1
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Got job 8 (collect at /workspaces/recom/expstu/exp3/exp3_full.py:71) with 4 output partitions
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 13 (collect at /workspaces/recom/expstu/exp3/exp3_full.py:71)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List(ShuffleMapStage 12)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents: List(ShuffleMapStage 12)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents found for ResultStage 13: List(ShuffleMapStage 12)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents found for ShuffleMapStage 12: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting ShuffleMapStage 12 (PairwiseRDD[20] at reduceByKey at /workspaces/recom/expstu/exp3/exp3_full.py:68), which has no missing parents
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_11 stored as values in memory (estimated size 15.8 KiB, free 433.7 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_11_piece0 stored as bytes in memory (estimated size 8.4 KiB, free 433.6 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.SparkContext - Created broadcast 11 from broadcast at DAGScheduler.scala:1686
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting 4 missing tasks from ShuffleMapStage 12 (PairwiseRDD[20] at reduceByKey at /workspaces/recom/expstu/exp3/exp3_full.py:68) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 12.0 with 4 tasks resource profile 0
+[dispatcher-event-loop-1] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 12.0 (TID 14) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 0, NODE_LOCAL, 9438 bytes) 
+[dispatcher-event-loop-1] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 12.0 (TID 15) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 1, NODE_LOCAL, 9438 bytes) 
+[Executor task launch worker for task 0.0 in stage 12.0 (TID 14)] INFO org.apache.spark.executor.Executor - Running task 0.0 in stage 12.0 (TID 14)
+[Executor task launch worker for task 1.0 in stage 12.0 (TID 15)] INFO org.apache.spark.executor.Executor - Running task 1.0 in stage 12.0 (TID 15)
+[Executor task launch worker for task 1.0 in stage 12.0 (TID 15)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 3 (410.0 B) non-empty blocks including 3 (410.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[Executor task launch worker for task 1.0 in stage 12.0 (TID 15)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 8 ms
+[Executor task launch worker for task 0.0 in stage 12.0 (TID 14)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 2 (253.0 B) non-empty blocks including 2 (253.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[Executor task launch worker for task 0.0 in stage 12.0 (TID 14)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 5 ms
+[Executor task launch worker for task 1.0 in stage 12.0 (TID 15)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 293, boot = -826, init = 1119, finish = 0
+[Executor task launch worker for task 1.0 in stage 12.0 (TID 15)] INFO org.apache.spark.executor.Executor - Finished task 1.0 in stage 12.0 (TID 15). 2535 bytes result sent to driver
+[dispatcher-event-loop-1] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 2.0 in stage 12.0 (TID 16) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 2, NODE_LOCAL, 9438 bytes) 
+[Executor task launch worker for task 2.0 in stage 12.0 (TID 16)] INFO org.apache.spark.executor.Executor - Running task 2.0 in stage 12.0 (TID 16)
+[task-result-getter-2] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 12.0 (TID 15) in 355 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (1/4)
+[Executor task launch worker for task 2.0 in stage 12.0 (TID 16)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 3 (428.0 B) non-empty blocks including 3 (428.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[Executor task launch worker for task 2.0 in stage 12.0 (TID 16)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 5 ms
+[Executor task launch worker for task 0.0 in stage 12.0 (TID 14)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 407, boot = -450, init = 857, finish = 0
+[Executor task launch worker for task 0.0 in stage 12.0 (TID 14)] INFO org.apache.spark.executor.Executor - Finished task 0.0 in stage 12.0 (TID 14). 2535 bytes result sent to driver
+[dispatcher-event-loop-1] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 3.0 in stage 12.0 (TID 17) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 3, NODE_LOCAL, 9438 bytes) 
+[Executor task launch worker for task 3.0 in stage 12.0 (TID 17)] INFO org.apache.spark.executor.Executor - Running task 3.0 in stage 12.0 (TID 17)
+[task-result-getter-3] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 12.0 (TID 14) in 478 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (2/4)
+[Executor task launch worker for task 3.0 in stage 12.0 (TID 17)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 4 (629.0 B) non-empty blocks including 4 (629.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[Executor task launch worker for task 3.0 in stage 12.0 (TID 17)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 2 ms
+[Executor task launch worker for task 2.0 in stage 12.0 (TID 16)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 387, boot = -727, init = 1114, finish = 0
+[Executor task launch worker for task 2.0 in stage 12.0 (TID 16)] INFO org.apache.spark.executor.Executor - Finished task 2.0 in stage 12.0 (TID 16). 2535 bytes result sent to driver
+[Executor task launch worker for task 3.0 in stage 12.0 (TID 17)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 247, boot = -612, init = 858, finish = 1
+[task-result-getter-0] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 2.0 in stage 12.0 (TID 16) in 463 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (3/4)
+[Executor task launch worker for task 3.0 in stage 12.0 (TID 17)] INFO org.apache.spark.executor.Executor - Finished task 3.0 in stage 12.0 (TID 17). 2578 bytes result sent to driver
+[task-result-getter-0] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 3.0 in stage 12.0 (TID 17) in 364 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (4/4)
+[task-result-getter-0] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 12.0 whose tasks have all completed, from pool 
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - ShuffleMapStage 12 (reduceByKey at /workspaces/recom/expstu/exp3/exp3_full.py:68) finished in 867 ms
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - looking for newly runnable stages
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - running: HashSet()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - waiting: HashSet(ResultStage 13)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - failed: HashSet()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents found for ResultStage 13: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 13 (PythonRDD[23] at collect at /workspaces/recom/expstu/exp3/exp3_full.py:71), which has no missing parents
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_12 stored as values in memory (estimated size 10.8 KiB, free 433.7 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_12_piece0 stored as bytes in memory (estimated size 6.2 KiB, free 433.7 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.SparkContext - Created broadcast 12 from broadcast at DAGScheduler.scala:1686
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting 4 missing tasks from ResultStage 13 (PythonRDD[23] at collect at /workspaces/recom/expstu/exp3/exp3_full.py:71) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 13.0 with 4 tasks resource profile 0
+[dispatcher-event-loop-0] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 13.0 (TID 18) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 0, NODE_LOCAL, 9449 bytes) 
+[dispatcher-event-loop-0] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 2.0 in stage 13.0 (TID 19) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 2, NODE_LOCAL, 9449 bytes) 
+[Executor task launch worker for task 0.0 in stage 13.0 (TID 18)] INFO org.apache.spark.executor.Executor - Running task 0.0 in stage 13.0 (TID 18)
+[Executor task launch worker for task 2.0 in stage 13.0 (TID 19)] INFO org.apache.spark.executor.Executor - Running task 2.0 in stage 13.0 (TID 19)
+[Executor task launch worker for task 0.0 in stage 13.0 (TID 18)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 2 (176.0 B) non-empty blocks including 2 (176.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[Executor task launch worker for task 0.0 in stage 13.0 (TID 18)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 0 ms
+[Executor task launch worker for task 2.0 in stage 13.0 (TID 19)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 2 (176.0 B) non-empty blocks including 2 (176.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[Executor task launch worker for task 2.0 in stage 13.0 (TID 19)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 1 ms
+[Executor task launch worker for task 0.0 in stage 13.0 (TID 18)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 239, boot = -535, init = 773, finish = 1
+[Executor task launch worker for task 0.0 in stage 13.0 (TID 18)] INFO org.apache.spark.executor.Executor - Finished task 0.0 in stage 13.0 (TID 18). 2380 bytes result sent to driver
+[dispatcher-event-loop-0] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 3.0 in stage 13.0 (TID 20) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 3, NODE_LOCAL, 9449 bytes) 
+[Executor task launch worker for task 3.0 in stage 13.0 (TID 20)] INFO org.apache.spark.executor.Executor - Running task 3.0 in stage 13.0 (TID 20)
+[task-result-getter-2] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 13.0 (TID 18) in 283 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (1/4)
+[Executor task launch worker for task 2.0 in stage 13.0 (TID 19)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 248, boot = -376, init = 624, finish = 0
+[Executor task launch worker for task 2.0 in stage 13.0 (TID 19)] INFO org.apache.spark.executor.Executor - Finished task 2.0 in stage 13.0 (TID 19). 2380 bytes result sent to driver
+[dispatcher-event-loop-0] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 13.0 (TID 21) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 1, PROCESS_LOCAL, 9449 bytes) 
+[Executor task launch worker for task 1.0 in stage 13.0 (TID 21)] INFO org.apache.spark.executor.Executor - Running task 1.0 in stage 13.0 (TID 21)
+[task-result-getter-3] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 2.0 in stage 13.0 (TID 19) in 304 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (2/4)
+[Executor task launch worker for task 3.0 in stage 13.0 (TID 20)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 1 (88.0 B) non-empty blocks including 1 (88.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[Executor task launch worker for task 3.0 in stage 13.0 (TID 20)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 0 ms
+[Executor task launch worker for task 1.0 in stage 13.0 (TID 21)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[Executor task launch worker for task 1.0 in stage 13.0 (TID 21)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 0 ms
+[Executor task launch worker for task 1.0 in stage 13.0 (TID 21)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 234, boot = -407, init = 640, finish = 1
+[Executor task launch worker for task 1.0 in stage 13.0 (TID 21)] INFO org.apache.spark.executor.Executor - Finished task 1.0 in stage 13.0 (TID 21). 2267 bytes result sent to driver
+[task-result-getter-1] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 13.0 (TID 21) in 286 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (3/4)
+[Executor task launch worker for task 3.0 in stage 13.0 (TID 20)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 330, boot = -345, init = 675, finish = 0
+[Executor task launch worker for task 3.0 in stage 13.0 (TID 20)] INFO org.apache.spark.executor.Executor - Finished task 3.0 in stage 13.0 (TID 20). 2330 bytes result sent to driver
+[task-result-getter-0] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 3.0 in stage 13.0 (TID 20) in 392 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (4/4)
+[task-result-getter-0] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 13.0 whose tasks have all completed, from pool 
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - ResultStage 13 (collect at /workspaces/recom/expstu/exp3/exp3_full.py:71) finished in 694 ms
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Job 8 is finished. Cancelling potential speculative or zombie tasks for this job
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Canceling stage 13
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 13: Stage finished
+[Thread-4] INFO org.apache.spark.scheduler.DAGScheduler - Job 8 finished: collect at /workspaces/recom/expstu/exp3/exp3_full.py:71, took 1577.380056 ms
+部门: 技术部, 员工数: 9, 平均工资: 6911.11
+部门: 人事部, 员工数: 6, 平均工资: 7583.33
+部门: 管理部, 员工数: 4, 平均工资: 16125.0
+部门: 市场部, 员工数: 8, 平均工资: 9475.0
+部门: 研发部, 员工数: 8, 平均工资: 12287.5
+
+=== 实验4：sentences.txt 词频统计 ===
+[Thread-4] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_13 stored as values in memory (estimated size 291.7 KiB, free 433.4 MiB)
+[Thread-4] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_13_piece0 stored as bytes in memory (estimated size 49.7 KiB, free 433.4 MiB)
+[Thread-4] INFO org.apache.spark.SparkContext - Created broadcast 13 from textFile at NativeMethodAccessorImpl.java:0
+[Thread-4] INFO org.apache.hadoop.mapred.FileInputFormat - Total input files to process : 1
+[Thread-4] INFO org.apache.spark.SparkContext - Starting job: sortBy at /workspaces/recom/expstu/exp3/exp3_full.py:79
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Registering RDD 27 (reduceByKey at /workspaces/recom/expstu/exp3/exp3_full.py:78) as input to shuffle 2
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Got job 9 (sortBy at /workspaces/recom/expstu/exp3/exp3_full.py:79) with 2 output partitions
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 15 (sortBy at /workspaces/recom/expstu/exp3/exp3_full.py:79)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List(ShuffleMapStage 14)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents: List(ShuffleMapStage 14)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents found for ResultStage 15: List(ShuffleMapStage 14)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents found for ShuffleMapStage 14: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting ShuffleMapStage 14 (PairwiseRDD[27] at reduceByKey at /workspaces/recom/expstu/exp3/exp3_full.py:78), which has no missing parents
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_14 stored as values in memory (estimated size 14.0 KiB, free 433.4 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_14_piece0 stored as bytes in memory (estimated size 7.9 KiB, free 433.4 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.SparkContext - Created broadcast 14 from broadcast at DAGScheduler.scala:1686
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting 2 missing tasks from ShuffleMapStage 14 (PairwiseRDD[27] at reduceByKey at /workspaces/recom/expstu/exp3/exp3_full.py:78) (first 15 tasks are for partitions Vector(0, 1))
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 14.0 with 2 tasks resource profile 0
+[dispatcher-event-loop-1] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 14.0 (TID 22) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 0, PROCESS_LOCAL, 9684 bytes) 
+[dispatcher-event-loop-1] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 14.0 (TID 23) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 1, PROCESS_LOCAL, 9684 bytes) 
+[Executor task launch worker for task 0.0 in stage 14.0 (TID 22)] INFO org.apache.spark.executor.Executor - Running task 0.0 in stage 14.0 (TID 22)
+[Executor task launch worker for task 1.0 in stage 14.0 (TID 23)] INFO org.apache.spark.executor.Executor - Running task 1.0 in stage 14.0 (TID 23)
+[Executor task launch worker for task 0.0 in stage 14.0 (TID 22)] INFO org.apache.spark.rdd.HadoopRDD - Task (TID 22) input split: file:/workspaces/recom/expstu/exp3/sentences.txt:0+448
+[Executor task launch worker for task 1.0 in stage 14.0 (TID 23)] INFO org.apache.spark.rdd.HadoopRDD - Task (TID 23) input split: file:/workspaces/recom/expstu/exp3/sentences.txt:448+448
+[Executor task launch worker for task 0.0 in stage 14.0 (TID 22)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 282, boot = -549, init = 830, finish = 1
+[Executor task launch worker for task 0.0 in stage 14.0 (TID 22)] INFO org.apache.spark.executor.Executor - Finished task 0.0 in stage 14.0 (TID 22). 1888 bytes result sent to driver
+[task-result-getter-2] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 14.0 (TID 22) in 339 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (1/2)
+[Executor task launch worker for task 1.0 in stage 14.0 (TID 23)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 350, boot = -565, init = 914, finish = 1
+[Executor task launch worker for task 1.0 in stage 14.0 (TID 23)] INFO org.apache.spark.executor.Executor - Finished task 1.0 in stage 14.0 (TID 23). 1888 bytes result sent to driver
+[task-result-getter-3] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 14.0 (TID 23) in 411 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (2/2)
+[task-result-getter-3] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 14.0 whose tasks have all completed, from pool 
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - ShuffleMapStage 14 (reduceByKey at /workspaces/recom/expstu/exp3/exp3_full.py:78) finished in 433 ms
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - looking for newly runnable stages
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - running: HashSet()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - waiting: HashSet(ResultStage 15)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - failed: HashSet()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents found for ResultStage 15: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 15 (PythonRDD[30] at sortBy at /workspaces/recom/expstu/exp3/exp3_full.py:79), which has no missing parents
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_15 stored as values in memory (estimated size 12.6 KiB, free 433.4 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_15_piece0 stored as bytes in memory (estimated size 6.7 KiB, free 433.4 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.SparkContext - Created broadcast 15 from broadcast at DAGScheduler.scala:1686
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting 2 missing tasks from ResultStage 15 (PythonRDD[30] at sortBy at /workspaces/recom/expstu/exp3/exp3_full.py:79) (first 15 tasks are for partitions Vector(0, 1))
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 15.0 with 2 tasks resource profile 0
+[dispatcher-event-loop-0] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 15.0 (TID 24) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 0, NODE_LOCAL, 9449 bytes) 
+[dispatcher-event-loop-0] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 15.0 (TID 25) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 1, NODE_LOCAL, 9449 bytes) 
+[Executor task launch worker for task 1.0 in stage 15.0 (TID 25)] INFO org.apache.spark.executor.Executor - Running task 1.0 in stage 15.0 (TID 25)
+[Executor task launch worker for task 0.0 in stage 15.0 (TID 24)] INFO org.apache.spark.executor.Executor - Running task 0.0 in stage 15.0 (TID 24)
+[Executor task launch worker for task 0.0 in stage 15.0 (TID 24)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 2 (709.0 B) non-empty blocks including 2 (709.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[Executor task launch worker for task 0.0 in stage 15.0 (TID 24)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 2 ms
+[Executor task launch worker for task 1.0 in stage 15.0 (TID 25)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 2 (739.0 B) non-empty blocks including 2 (739.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[Executor task launch worker for task 1.0 in stage 15.0 (TID 25)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 1 ms
+[Executor task launch worker for task 1.0 in stage 15.0 (TID 25)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 405, boot = -645, init = 1049, finish = 1
+[Executor task launch worker for task 1.0 in stage 15.0 (TID 25)] INFO org.apache.spark.executor.Executor - Finished task 1.0 in stage 15.0 (TID 25). 2307 bytes result sent to driver
+[task-result-getter-1] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 15.0 (TID 25) in 437 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (1/2)
+[Executor task launch worker for task 0.0 in stage 15.0 (TID 24)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 407, boot = -710, init = 1115, finish = 2
+[Executor task launch worker for task 0.0 in stage 15.0 (TID 24)] INFO org.apache.spark.executor.Executor - Finished task 0.0 in stage 15.0 (TID 24). 2307 bytes result sent to driver
+[task-result-getter-0] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 15.0 (TID 24) in 440 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (2/2)
+[task-result-getter-0] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 15.0 whose tasks have all completed, from pool 
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - ResultStage 15 (sortBy at /workspaces/recom/expstu/exp3/exp3_full.py:79) finished in 459 ms
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Job 9 is finished. Cancelling potential speculative or zombie tasks for this job
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Canceling stage 15
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 15: Stage finished
+[Thread-4] INFO org.apache.spark.scheduler.DAGScheduler - Job 9 finished: sortBy at /workspaces/recom/expstu/exp3/exp3_full.py:79, took 900.705239 ms
+[Thread-4] INFO org.apache.spark.SparkContext - Starting job: sortBy at /workspaces/recom/expstu/exp3/exp3_full.py:79
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Got job 10 (sortBy at /workspaces/recom/expstu/exp3/exp3_full.py:79) with 2 output partitions
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 17 (sortBy at /workspaces/recom/expstu/exp3/exp3_full.py:79)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List(ShuffleMapStage 16)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents found for ResultStage 17: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 17 (PythonRDD[31] at sortBy at /workspaces/recom/expstu/exp3/exp3_full.py:79), which has no missing parents
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_16 stored as values in memory (estimated size 11.7 KiB, free 433.3 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_16_piece0 stored as bytes in memory (estimated size 6.5 KiB, free 433.3 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.SparkContext - Created broadcast 16 from broadcast at DAGScheduler.scala:1686
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting 2 missing tasks from ResultStage 17 (PythonRDD[31] at sortBy at /workspaces/recom/expstu/exp3/exp3_full.py:79) (first 15 tasks are for partitions Vector(0, 1))
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 17.0 with 2 tasks resource profile 0
+[dispatcher-event-loop-1] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 17.0 (TID 26) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 0, NODE_LOCAL, 9449 bytes) 
+[dispatcher-event-loop-1] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 17.0 (TID 27) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 1, NODE_LOCAL, 9449 bytes) 
+[Executor task launch worker for task 1.0 in stage 17.0 (TID 27)] INFO org.apache.spark.executor.Executor - Running task 1.0 in stage 17.0 (TID 27)
+[Executor task launch worker for task 0.0 in stage 17.0 (TID 26)] INFO org.apache.spark.executor.Executor - Running task 0.0 in stage 17.0 (TID 26)
+[Executor task launch worker for task 0.0 in stage 17.0 (TID 26)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 2 (709.0 B) non-empty blocks including 2 (709.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[Executor task launch worker for task 0.0 in stage 17.0 (TID 26)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 4 ms
+[Executor task launch worker for task 1.0 in stage 17.0 (TID 27)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 2 (739.0 B) non-empty blocks including 2 (739.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[Executor task launch worker for task 1.0 in stage 17.0 (TID 27)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 4 ms
+[Executor task launch worker for task 0.0 in stage 17.0 (TID 26)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 323, boot = -636, init = 958, finish = 1
+[Executor task launch worker for task 0.0 in stage 17.0 (TID 26)] INFO org.apache.spark.executor.Executor - Finished task 0.0 in stage 17.0 (TID 26). 2450 bytes result sent to driver
+[task-result-getter-2] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 17.0 (TID 26) in 355 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (1/2)
+[Executor task launch worker for task 1.0 in stage 17.0 (TID 27)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 369, boot = -601, init = 969, finish = 1
+[Executor task launch worker for task 1.0 in stage 17.0 (TID 27)] INFO org.apache.spark.executor.Executor - Finished task 1.0 in stage 17.0 (TID 27). 2499 bytes result sent to driver
+[task-result-getter-3] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 17.0 (TID 27) in 449 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (2/2)
+[task-result-getter-3] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 17.0 whose tasks have all completed, from pool 
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - ResultStage 17 (sortBy at /workspaces/recom/expstu/exp3/exp3_full.py:79) finished in 466 ms
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Job 10 is finished. Cancelling potential speculative or zombie tasks for this job
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Canceling stage 17
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 17: Stage finished
+[Thread-4] INFO org.apache.spark.scheduler.DAGScheduler - Job 10 finished: sortBy at /workspaces/recom/expstu/exp3/exp3_full.py:79, took 483.173541 ms
+[Thread-4] INFO org.apache.spark.SparkContext - Starting job: runJob at PythonRDD.scala:191
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Registering RDD 33 (sortBy at /workspaces/recom/expstu/exp3/exp3_full.py:79) as input to shuffle 3
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Got job 11 (runJob at PythonRDD.scala:191) with 1 output partitions
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 20 (runJob at PythonRDD.scala:191)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List(ShuffleMapStage 19)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents: List(ShuffleMapStage 19)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents found for ResultStage 20: List(ShuffleMapStage 19)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents found for ShuffleMapStage 19: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting ShuffleMapStage 19 (PairwiseRDD[33] at sortBy at /workspaces/recom/expstu/exp3/exp3_full.py:79), which has no missing parents
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_17 stored as values in memory (estimated size 12.5 KiB, free 433.4 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_17_piece0 stored as bytes in memory (estimated size 7.3 KiB, free 433.4 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.SparkContext - Created broadcast 17 from broadcast at DAGScheduler.scala:1686
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting 2 missing tasks from ShuffleMapStage 19 (PairwiseRDD[33] at sortBy at /workspaces/recom/expstu/exp3/exp3_full.py:79) (first 15 tasks are for partitions Vector(0, 1))
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 19.0 with 2 tasks resource profile 0
+[dispatcher-event-loop-0] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 19.0 (TID 28) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 0, NODE_LOCAL, 9438 bytes) 
+[dispatcher-event-loop-0] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 19.0 (TID 29) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 1, NODE_LOCAL, 9438 bytes) 
+[Executor task launch worker for task 1.0 in stage 19.0 (TID 29)] INFO org.apache.spark.executor.Executor - Running task 1.0 in stage 19.0 (TID 29)
+[Executor task launch worker for task 0.0 in stage 19.0 (TID 28)] INFO org.apache.spark.executor.Executor - Running task 0.0 in stage 19.0 (TID 28)
+[Executor task launch worker for task 1.0 in stage 19.0 (TID 29)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 2 (739.0 B) non-empty blocks including 2 (739.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[Executor task launch worker for task 1.0 in stage 19.0 (TID 29)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 0 ms
+[Executor task launch worker for task 0.0 in stage 19.0 (TID 28)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 2 (709.0 B) non-empty blocks including 2 (709.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[Executor task launch worker for task 0.0 in stage 19.0 (TID 28)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 2 ms
+[Executor task launch worker for task 0.0 in stage 19.0 (TID 28)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 322, boot = -584, init = 905, finish = 1
+[Executor task launch worker for task 0.0 in stage 19.0 (TID 28)] INFO org.apache.spark.executor.Executor - Finished task 0.0 in stage 19.0 (TID 28). 2533 bytes result sent to driver
+[task-result-getter-1] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 19.0 (TID 28) in 368 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (1/2)
+[Executor task launch worker for task 1.0 in stage 19.0 (TID 29)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 360, boot = -622, init = 981, finish = 1
+[Executor task launch worker for task 1.0 in stage 19.0 (TID 29)] INFO org.apache.spark.executor.Executor - Finished task 1.0 in stage 19.0 (TID 29). 2533 bytes result sent to driver
+[task-result-getter-0] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 19.0 (TID 29) in 405 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (2/2)
+[task-result-getter-0] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 19.0 whose tasks have all completed, from pool 
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - ShuffleMapStage 19 (sortBy at /workspaces/recom/expstu/exp3/exp3_full.py:79) finished in 413 ms
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - looking for newly runnable stages
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - running: HashSet()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - waiting: HashSet(ResultStage 20)
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - failed: HashSet()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Missing parents found for ResultStage 20: List()
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 20 (PythonRDD[36] at RDD at PythonRDD.scala:58), which has no missing parents
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_18 stored as values in memory (estimated size 10.3 KiB, free 433.4 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.storage.memory.MemoryStore - Block broadcast_18_piece0 stored as bytes in memory (estimated size 5.9 KiB, free 433.3 MiB)
+[dag-scheduler-event-loop] INFO org.apache.spark.SparkContext - Created broadcast 18 from broadcast at DAGScheduler.scala:1686
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 20 (PythonRDD[36] at RDD at PythonRDD.scala:58) (first 15 tasks are for partitions Vector(0))
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 20.0 with 1 tasks resource profile 0
+[dispatcher-event-loop-1] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 20.0 (TID 30) (a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net,executor driver, partition 0, NODE_LOCAL, 9449 bytes) 
+[Executor task launch worker for task 0.0 in stage 20.0 (TID 30)] INFO org.apache.spark.executor.Executor - Running task 0.0 in stage 20.0 (TID 30)
+[Executor task launch worker for task 0.0 in stage 20.0 (TID 30)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 2 (396.0 B) non-empty blocks including 2 (396.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[Executor task launch worker for task 0.0 in stage 20.0 (TID 30)] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 0 ms
+[Executor task launch worker for task 0.0 in stage 20.0 (TID 30)] INFO org.apache.spark.api.python.PythonRunner - Times: total = 119, boot = -579, init = 697, finish = 1
+[Executor task launch worker for task 0.0 in stage 20.0 (TID 30)] INFO org.apache.spark.executor.Executor - Finished task 0.0 in stage 20.0 (TID 30). 2581 bytes result sent to driver
+[task-result-getter-2] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 20.0 (TID 30) in 142 ms on a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net (executor driver) (1/1)
+[task-result-getter-2] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 20.0 whose tasks have all completed, from pool 
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - ResultStage 20 (runJob at PythonRDD.scala:191) finished in 150 ms
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.DAGScheduler - Job 11 is finished. Cancelling potential speculative or zombie tasks for this job
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Canceling stage 20
+[dag-scheduler-event-loop] INFO org.apache.spark.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 20: Stage finished
+[Thread-4] INFO org.apache.spark.scheduler.DAGScheduler - Job 11 finished: runJob at PythonRDD.scala:191, took 566.844514 ms
+出现频率最高的前10个单词：
+spark: 13次
+is: 6次
+and: 6次
+the: 5次
+data: 4次
+in: 3次
+to: 3次
+python: 2次
+of: 2次
+operations: 2次
+[Thread-4] INFO org.apache.spark.SparkContext - SparkContext is stopping with exitCode 0 from stop at NativeMethodAccessorImpl.java:0.
+[Thread-4] INFO org.sparkproject.jetty.server.Server - Stopped Server@2134dc89{STOPPING}[11.0.26,sto=30000]
+[Thread-4] INFO org.sparkproject.jetty.server.Server - Shutdown Server@2134dc89{STOPPING}[11.0.26,sto=30000]
+[Thread-4] INFO org.sparkproject.jetty.server.AbstractConnector - Stopped Spark@1cbfdc8c{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+[Thread-4] INFO org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://a7c6d5c1-d065-426c-938b-f561f469ee87.internal.cloudapp.net:4040
+[dispatcher-event-loop-0] INFO org.apache.spark.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+[Thread-4] INFO org.apache.spark.storage.memory.MemoryStore - MemoryStore cleared
+[Thread-4] INFO org.apache.spark.storage.BlockManager - BlockManager stopped
+[Thread-4] INFO org.apache.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+[dispatcher-event-loop-1] INFO org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+[Thread-4] INFO org.apache.spark.SparkContext - Successfully stopped SparkContext (Uptime: 15470 ms)
+
+✅ 所有实验步骤执行完成！
