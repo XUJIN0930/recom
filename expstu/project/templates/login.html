@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>管理登录 - 大数据推荐系统</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="background-blob blob-left"></div>
+  <div class="background-blob blob-right"></div>
+
+  <main class="auth-shell">
+    <section class="card auth-card">
+      <div>
+        <span class="eyebrow">Admin Access</span>
+        <h1>管理后台登录</h1>
+        <p class="subtitle">登录后可以管理用户、商品、评分数据，并查看更完整的推荐分析结果。</p>
+      </div>
+
+      {% if error_message %}
+        <div class="alert">{{ error_message }}</div>
+      {% endif %}
+
+      <form class="auth-form" method="post" action="{{ url_for('login') }}">
+        <label class="field">
+          <span>用户名</span>
+          <input name="username" type="text" placeholder="admin" required />
+        </label>
+        <label class="field">
+          <span>密码</span>
+          <input name="password" type="password" placeholder="admin123" required />
+        </label>
+        <button class="button primary-button" type="submit">进入后台</button>
+      </form>
+
+      <p class="helper-text">默认演示账号：admin / admin123</p>
+    </section>
+  </main>
+</body>
+</html>

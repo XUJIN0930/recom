@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>大数据推荐系统仪表盘</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="background-blob blob-left"></div>
+  <div class="background-blob blob-right"></div>
+
+  <main class="shell">
+    <header class="topbar card">
+      <div>
+        <div class="brand">Recom Lab</div>
+        <p class="topbar-subtitle">公共推荐仪表盘</p>
+      </div>
+      <div class="topbar-actions">
+        {% if is_admin_authenticated %}
+          <a class="button-link" href="{{ url_for('admin') }}">进入管理后台</a>
+          <form method="post" action="{{ url_for('logout') }}">
+            <button class="button secondary-button" type="submit">退出</button>
+          </form>
+        {% else %}
+          <a class="button-link" href="{{ url_for('login') }}">登录管理</a>
+        {% endif %}
+      </div>
+    </header>
+
+    <section class="hero card">
+      <div>
+        <span class="eyebrow">Recommendation System Demo</span>
+        <h1>大数据推荐系统</h1>
+        <p class="subtitle">后端包含用户、商品、评分与推荐算法，前端提供图形化分析界面，适合做课程设计、实验展示和答辩演示。</p>
+      </div>
+      <div class="hero-metrics" id="metricCards"></div>
+    </section>
+
+    <section class="toolbar card">
+      <div>
+        <label for="userSelect">选择用户</label>
+        <select id="userSelect"></select>
+      </div>
+      <div class="toolbar-note">
+        <strong>推荐策略</strong>
+        <span>协同过滤 + 类目偏好 + 热度兜底</span>
+      </div>
+    </section>
+
+    <section class="grid-two">
+      <article class="card panel">
+        <div class="panel-header">
+          <div>
+            <h2>推荐结果</h2>
+            <p>按综合分排序，包含推荐理由和评分明细。</p>
+          </div>
+        </div>
+        <div id="recommendationList" class="recommendation-list"></div>
+      </article>
+
+      <article class="card panel">
+        <div class="panel-header">
+          <div>
+            <h2>数据概览</h2>
+            <p>展示商品类目、评分分布和热门商品。</p>
+          </div>
+        </div>
+        <div class="chart-stack">
+          <div class="chart-card">
+            <h3>商品类目分布</h3>
+            <div id="categoryChart" class="chart-bars"></div>
+          </div>
+          <div class="chart-card">
+            <h3>评分分布</h3>
+            <div id="ratingChart" class="chart-bars"></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="card panel">
+      <div class="panel-header">
+        <div>
+          <h2>热门商品</h2>
+          <p>按累计评分热度排序。</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>商品</th>
+              <th>类目</th>
+              <th>平均分</th>
+              <th>评分数</th>
+              <th>价格</th>
+            </tr>
+          </thead>
+          <tbody id="topProductTable"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    window.__INITIAL_DATA__ = {{ initial_data | tojson }};
+  </script>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
